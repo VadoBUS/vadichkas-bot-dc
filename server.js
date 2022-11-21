@@ -37,7 +37,33 @@ bot.musicEndCommand({
   $description[Выхожу из голосового канала]
   $color[0000ff]`
 })
+
 bot.interactionCommand({
     name: "test", 
     code: `$interactionReply[Я топ!]`
+})
+
+bot.interactionCommand({
+name: "stop",
+  code: `$if[$channelID==1044232414110683156]
+  $title[Аривидерчи]
+  $description[Пока мой друг]
+  $color[0000ff]
+  $footer[$username;$authorAvatar]
+  $stopSong
+  $else
+  $title[<a:no:840961533848846356> Ошибка!]
+	$description[-В данном канале нельзя выполнить эту команду]
+	$color[ff0000]
+	$footer[$username;$authorAvatar]
+  $endif`
+
+})
+
+bot.loopCommand({
+code: `
+`,
+channel: "1044276276216725544",
+executeOnStartup: true,
+every: 500000
 })
