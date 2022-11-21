@@ -27,8 +27,7 @@ bot.musicStartCommand({
   channel: "1044232414110683156",
   code: `$title[Сейчас играет:]
   $description[$songInfo[title]]
-  $color[0000ff]
-  $footer[$username;$authorAvatar]`
+  $color[0000ff]`
 })
 
 bot.musicEndCommand({
