@@ -62,6 +62,7 @@ name: "stop",
 
 bot.loopCommand({
 code: `
+$createSlashCommand[$guildID;stop;Stop Music]
 `,
 channel: "1044276276216725544",
 executeOnStartup: true,
