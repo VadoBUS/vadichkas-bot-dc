@@ -1,6 +1,6 @@
 module.exports = {
 	name: "play",
-	aliases: ["p"],
+	aliases: ['p'],
   code: `
 $if[$channelID==1044232414110683156]
   $title[Найдено:]
