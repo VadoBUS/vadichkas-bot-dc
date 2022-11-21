@@ -1,6 +1,6 @@
 module.exports = {
 	name: "stop",
-	aliases: ["s"],
+	aliases: ['s'],
   code: `
 $if[$channelID==1044232414110683156]
   $title[Аривидерчи]
