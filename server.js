@@ -37,3 +37,7 @@ bot.musicEndCommand({
   $description[Выхожу из голосового канала]
   $color[0000ff]`
 })
+bot.interactionCommand({
+    name: "test", 
+    code: `$interactionReply[Я топ!]`
+})
